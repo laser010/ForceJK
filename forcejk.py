@@ -81,7 +81,7 @@ class BrutForce:
 def main():
     parser = argparse.ArgumentParser(prog="forcejk.py", add_help=True,
                                      description=("ForceJK is an brute force program"),
-                                     usage=("python forcejk.py -a <account target> -p <password list> -s <server>"))
+                                     usage=("python forcejk.py -a <account target> -p <password list> -H <host>"))
     parser.add_argument("-H", dest="host", required=True, help="Host target")
     parser.add_argument("-p", dest="port", help="The port used for the server")
     parser.add_argument("-a", dest="account", required=True, help="Email account target")
